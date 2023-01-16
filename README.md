@@ -1,1 +1,1 @@
-# JonRickMiniProject1.github.io
+# IretaKohi.github.io
