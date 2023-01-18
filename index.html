@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ireta kōhī</title>
-    <link rel="icon" href="images/Ireta kōhī-1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+      rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+      body{
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar-example">
     <!-- navbar -->
-    <nav  class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow-lg">
+    <nav  class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark shadow-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Ireta kōhī</a>
         <button
@@ -34,8 +34,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav me-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarColor02">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" href="#list-item-1"
                 >Home
@@ -43,8 +43,11 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#list-item-2">Products</a>
+              <a class="nav-link" href="#list-item-2">Menu</a>
             </li>
+			<li class="nav-item">
+				<a class="nav-link" href="#list-item-3">Contact Us</a>
+			  </li>
           </ul>
         </div>
       </div>
@@ -62,249 +65,235 @@
         <div class="lc-block">
           <div editable="rich">
             <p class="lead">
-              Visit us at 
+				It’s not just a coffee.
             </p>
-
-            <p class="lead">Ylang-Ylang Homes Phase 2, Tabang, Guiguinto Bulacan</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- carousel for hot -->
-
-    <!-- <div id="carouselExampleAutoplaying" class="carousel slide my-5 mx-5" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-			<div class="row row-cols-3 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="https://globalassets.starbucks.com/assets/ec519dd5642c41629194192cce582135.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Espresso</h5>
-							<p class="card-text">Price: 60 PHP</p>
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Order</button>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="https://globalassets.starbucks.com/assets/b635f407bbcd49e7b8dd9119ce33f76e.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Latte</h5>
-							<p class="card-text">Price: 80 PHP</p>
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Order</button>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="https://globalassets.starbucks.com/assets/5c515339667943ce84dc56effdf5fc1b.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Cappuccino</h5>
-							<p class="card-text">Price: 80 PHP</p>
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Order</button>
-						</div>
-					</div>
-				</div>
-			</div>
-        </div>
-        <div class="carousel-item">
-			<div class="row row-cols-3 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="https://globalassets.starbucks.com/assets/fedee22e49724cd09fbcc7ee2e567377.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Flat White</h5>
-							<p class="card-text">Price: 80 PHP</p>
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Order</button>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="https://globalassets.starbucks.com/assets/58db701349cb48738069e8c912e2b3ac.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Caramel Macchiato</h5>
-							<p class="card-text">Price: 90 PHP</p>
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Order</button>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="https://globalassets.starbucks.com/assets/915736da018842e788147f7eab73db73.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Cafe Mocha</h5>
-							<p class="card-text">Price: 90 PHP</p>
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Order</button>
-						</div>
-					</div>
-				</div>
-			</div>
-        </div>
-        <div class="carousel-item">
-			<div class="row row-cols-3 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="https://globalassets.starbucks.com/assets/f12bc8af498d45ed92c5d6f1dac64062.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Cafe Americano</h5>
-							<p class="card-text">Price: 60 PHP</p>
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Order</button>
-						</div>
-					</div>
-				</div>
-			</div>
-        </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> -->
-
-    <h1 id="list-item-2" class="my-3 container">Products</h1>
-    <div class="container my-5 p-3 shadow-lg">
-      <div class="row row-cols-1 row-cols-md-3 g-4 overflow-x-auto" style="height: 80vh">
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/ec519dd5642c41629194192cce582135.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Espresso</h5>
-              <p class="card-text">Price: 60 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/b635f407bbcd49e7b8dd9119ce33f76e.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Latte</h5>
-              <p class="card-text">Price: 80 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/5c515339667943ce84dc56effdf5fc1b.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Cappuccino</h5>
-              <p class="card-text">Price: 80 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/fedee22e49724cd09fbcc7ee2e567377.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Flat White</h5>
-              <p class="card-text">Price: 80 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/58db701349cb48738069e8c912e2b3ac.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Caramel Macchiato</h5>
-              <p class="card-text">Price: 90 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/915736da018842e788147f7eab73db73.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Cafe Mocha</h5>
-              <p class="card-text">Price: 90 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/f12bc8af498d45ed92c5d6f1dac64062.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Cafe Americano</h5>
-              <p class="card-text">Price: 60 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/921a409e6f55407da52eee4c8ad13ada.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Iced Americano</h5>
-              <p class="card-text">Price: 60 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/f4fd128c834643fa8c74f4ae9f579013.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Iced Latte</h5>
-              <p class="card-text">Price: 80 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://www.starbucks.co.th/stb-media/2020/08/45.Iced-Cappuccino1080.png" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Iced Cappuccino</h5>
-              <p class="card-text">Price: 80 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/363835b1db024636adeb4089ebb96291.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Iced Caramel Macchiato</h5>
-              <p class="card-text">Price: 90 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/0360378c6e774cc3a38d870fc75d5462.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Iced Mocha</h5>
-              <p class="card-text">Price: 90 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/410cd92738514641bf497d4b6a18c30f.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Caramel Frappe</h5>
-              <p class="card-text">Price: 110 PHP</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://globalassets.starbucks.com/assets/70198375bb0a442f8792437b5d1df972.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Mocha Frappe</h5>
-              <p class="card-text">Price: 110 PHP</p>
-            </div>
-          </div>
-        </div>
-      </div>
+	<!-- quote -->
+    <div  class="bg-dark text-light row align-items-center" style="height: 50vh;">
+      <h4 class="d-flex justify-content-center" style="font-size: 50px;">Get in. Get a coffee. Get going.</h4>
     </div>
 
-    <!-- footer -->
+    
+
+    <!-- carousel -->
+    <div class="container my-5">
+		<div id="carouselExampleAutoplaying" class="carousel slide h-100" data-bs-ride="carousel" style="border-radius: 10px;">
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="images/Cafe Mocha-.png" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item">
+				<img src="images/Cappuccino.png" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item">
+				<img src="images/Caramel Frappe.png" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item">
+				<img src="images/Mocha Frappe.png" class="d-block w-100" alt="...">
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+    </div>
+
+
+	<!-- quote -->
+    <div  class="bg-dark text-light row align-items-center" style="height: 50vh;">
+		<h4 class="d-flex justify-content-center" style="font-size: 50px;">Ireta Kohi is translation of "brewed coffee" in japanese.</h4>
+	  </div>
+    
+
+
+	<!-- menu -->
+    <div id="list-item-2" class="row align-items-center" >
+		<center><h1  class="my-3">Our Menu</h1></center>
+		<div class="container my-5 p-3 shadow-lg" style="width: 100vh;">
+			<div class="row row-cols-1 row-cols-md-3 g-4 overflow-x-auto text-dark" style="height: 80vh">
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/ec519dd5642c41629194192cce582135.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Espresso</h5>
+					<p class="card-text">Price: 60 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/b635f407bbcd49e7b8dd9119ce33f76e.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Latte</h5>
+					<p class="card-text">Price: 80 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/5c515339667943ce84dc56effdf5fc1b.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Cappuccino</h5>
+					<p class="card-text">Price: 80 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/fedee22e49724cd09fbcc7ee2e567377.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Flat White</h5>
+					<p class="card-text">Price: 80 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/58db701349cb48738069e8c912e2b3ac.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Caramel Macchiato</h5>
+					<p class="card-text">Price: 90 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/915736da018842e788147f7eab73db73.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Cafe Mocha</h5>
+					<p class="card-text">Price: 90 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/f12bc8af498d45ed92c5d6f1dac64062.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Cafe Americano</h5>
+					<p class="card-text">Price: 60 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/921a409e6f55407da52eee4c8ad13ada.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Iced Americano</h5>
+					<p class="card-text">Price: 60 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/f4fd128c834643fa8c74f4ae9f579013.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Iced Latte</h5>
+					<p class="card-text">Price: 80 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://www.starbucks.co.th/stb-media/2020/08/45.Iced-Cappuccino1080.png" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Iced Cappuccino</h5>
+					<p class="card-text">Price: 80 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/363835b1db024636adeb4089ebb96291.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Iced Caramel Macchiato</h5>
+					<p class="card-text">Price: 90 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/0360378c6e774cc3a38d870fc75d5462.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Iced Mocha</h5>
+					<p class="card-text">Price: 90 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/410cd92738514641bf497d4b6a18c30f.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Caramel Frappe</h5>
+					<p class="card-text">Price: 110 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="card">
+				  <img src="https://globalassets.starbucks.com/assets/70198375bb0a442f8792437b5d1df972.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="..."/>
+				  <div class="card-body">
+					<h5 class="card-title">Mocha Frappe</h5>
+					<p class="card-text">Price: 110 PHP</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+    </div>
+
+	<!-- quote -->
+    <div  class="bg-dark text-light row align-items-center" style="height: 50vh;">
+		<div class="container col-6	">
+			<h4 class="d-flex justify-content-center" style="font-size: 50px;">Ireta Kohi's goal is to promote the coffee beans locally produced by Bulakenyos in Talbak, Doña Remedios Trinidad, Bulacan.</h4>
+		</div>
+	</div>
+
+
+	<!-- Contact Us -->
+	<div id="list-item-3" class="my-5" >
+		<h4 class="d-flex justify-content-center my-4" style="font-size: 50px;">Comments, Suggestions, or Review</h4>
+		<div class="d-flex justify-content-center">
+			  <div class="card" style="width: 60rem;">
+				<div class="card-body">
+					<form>
+						<div class="mb-3">
+							<label for="exampleFirstName" class="form-label">First Name</label>
+							<input type="text" class="form-control" id="exampleFirstName">
+						</div>
+						<div class="mb-3">
+							<label for="exampleLastName" class="form-label">Last Name</label>
+							<input type="text" class="form-control" id="exampleLastName">
+						</div>
+						<div class="mb-3">
+						  <label for="exampleInputEmail1" class="form-label">Email address</label>
+						  <input type="email" class="form-control" id="exampleInputEmail1">
+						</div>
+						<div class="mb-3">
+							<label for="exampleTextarea" class="form-label">Message</label>
+							<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+						</div>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+				</div>
+			  </div>
+		</div>
+	</div>
+
+    
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-white text-muted">
+    <footer class="text-center text-lg-start bg-dark text-light text-muted">
       <!-- Section: Social media -->
       <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        class="d-flex justify-content-center  justify-content-lg-between p-4 border-bottom"
       >
         <!-- Left -->
         <div class="me-5 d-none d-lg-block">
@@ -336,7 +325,7 @@
         <!-- Right -->
       </section>
       <!-- Section: Social media -->
-
+      
       <!-- Section: Links  -->
       <section class="">
         <div class="container text-center text-md-start mt-5">
@@ -345,13 +334,13 @@
             
 
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Follow us!</h6>
-              <p>
+              <h6 class="text-uppercase fw-bold mb-4 text-secondary">Follow us!</h6>
+              <p class="text-secondary">
                 <a href="https://www.facebook.com/iretakohi" class="text-reset">Facebook</a>
               </p>
-              <p>
+              <p class="text-secondary">
                 <a href="https://www.instagram.com/iretakohi/" class="text-reset">Instagram</a>
               </p>
             </div>
@@ -360,7 +349,7 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <h6 class="text-uppercase fw-bold mb-4 text-secondary">Contact</h6>
               <p>
                 <i class="fas fa-home me-3 text-secondary"> Ylang-Ylang Homes Phase 2 Tabang, Guiguinto, Bulacan, 3015./i>
               </p>
