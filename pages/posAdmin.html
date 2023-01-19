@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ireta kōhī</title>
-    <link rel="icon" href="images/Ireta kōhī-1.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
@@ -19,7 +18,7 @@
           </button>
           <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Admin</h5>
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Cashier name</h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -117,8 +116,62 @@
           </ul>
           <!-- content -->
           <div class="tab-content" id="myTabContent">
-            <!-- Dashboard -->
-            <div class="tab-pane fade show active" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="dashboard-tab" tabindex="0">1</div>
+			<!-- dashboard -->
+			<div class="tab-pane fade show active" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="dashboard-tab" tabindex="0">
+				<div class="container">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleAddAccount" href="#">Add</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleEditAccount" href="#">Edit</a>
+                              </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                          </div>
+                        </div>
+                    </nav>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Password</th>
+                            <th scope="col">Category</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                          <tr>
+                            <th scope="row">01</th>
+                            <td>admin</td>
+                            <td>admin</td>
+                            <td>Admin</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">02</th>
+                            <td>user1</td>
+                            <td>1234</td>
+                            <td>Manager</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">03</th>
+                            <td>user2</td>
+                            <td>1234</td>
+                            <td>Cashier</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <!-- Product -->
             <div class="tab-pane fade" id="product-tab-pane" role="tabpanel" aria-labelledby="product-tab" tabindex="0">
                 <form class="d-flex mt-2" role="search">
@@ -133,7 +186,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Espresso</h5>
                             <p class="card-text">Price: 60 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -143,7 +196,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Latte</h5>
                             <p class="card-text">Price: 80 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -153,7 +206,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Cappuccino</h5>
                             <p class="card-text">Price: 80 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -163,7 +216,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Flat White</h5>
                             <p class="card-text">Price: 80 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -173,7 +226,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Caramel Macchiato</h5>
                             <p class="card-text">Price: 90 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -183,7 +236,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Cafe Mocha</h5>
                             <p class="card-text">Price: 90 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -193,7 +246,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Cafe Americano</h5>
                             <p class="card-text">Price: 60 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -203,7 +256,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Iced Americano</h5>
                             <p class="card-text">Price: 60 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -213,7 +266,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Iced Latte</h5>
                             <p class="card-text">Price: 80 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -223,7 +276,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Iced Cappuccino</h5>
                             <p class="card-text">Price: 80 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -233,7 +286,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Iced Caramel Macchiato</h5>
                             <p class="card-text">Price: 90 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -243,7 +296,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Iced Mocha</h5>
                             <p class="card-text">Price: 90 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -253,7 +306,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Caramel Frappe</h5>
                             <p class="card-text">Price: 110 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -263,7 +316,7 @@
                           <div class="card-body">
                             <h5 class="card-title">Mocha Frappe</h5>
                             <p class="card-text">Price: 110 PHP</p>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Order</button>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleAddOrder">Add to Order</button>
                           </div>
                         </div>
                       </div>
@@ -281,10 +334,10 @@
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Add</a>
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleAddProduct" href="#">Add</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Edit</a>
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleEditProduct" href="#">Edit</a>
                               </li>
                             </ul>
                             <form class="d-flex" role="search">
@@ -408,6 +461,196 @@
                 </div>
             </div>
           </div>
+    </div>
+    <!-- Modal Add order -->
+    <div class="modal fade" id="exampleAddOrder" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel1">Add to Orders</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="">
+            <div class="modal-body">
+            <h5>Product Name</h5>
+            <label for="exampleQuantity" class="form-label">Quantity</label>
+            <input type="number" class="form-control" id="exampleQuantity">
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Add</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal Add Product -->
+    <div class="modal fade" id="exampleAddProduct" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel2">Add Product</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                    <label for="exampleID" class="form-label">ID Number</label>
+                    <input type="number" class="form-control" id="exampleID">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleProductName" class="form-label">Product Name</label>
+                    <input type="text" class="form-control" id="exampleProductName">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Category</option>
+                            <option value="1">Hot</option>
+                            <option value="2">Cold</option>
+                            <option value="3">Frappe</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleQuantity" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="exampleQuantity">
+                    </div>
+                    <div class="mb-3">
+                        <label for="examplePrice" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="examplePrice">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal Edit Product -->
+    <div class="modal fade" id="exampleEditProduct" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel3">Edit Product</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                    <label for="exampleID" class="form-label">ID Number</label>
+                    <input type="number" class="form-control" id="exampleID">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleProductName" class="form-label">Product Name</label>
+                    <input type="text" class="form-control" id="exampleProductName">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Category</option>
+                            <option value="1">Hot</option>
+                            <option value="2">Cold</option>
+                            <option value="3">Frappe</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleQuantity" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="exampleQuantity">
+                    </div>
+                    <div class="mb-3">
+                        <label for="examplePrice" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="examplePrice">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+	<!-- Modal Add Account -->
+    <div class="modal fade" id="exampleAddAccount" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel2">Add Account</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                    <label for="exampleID" class="form-label">ID Number</label>
+                    <input type="number" class="form-control" id="exampleID">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleUserame" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="exampleUserame">
+                    </div>
+                    <div class="mb-3">
+                        <label for="examplePassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="examplePassword">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Category</option>
+                            <option value="1">Hot</option>
+                            <option value="2">Cold</option>
+                            <option value="3">Frappe</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal Edit Account -->
+    <div class="modal fade" id="exampleEditAccount" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel2">Edit Account</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                    <label for="exampleID" class="form-label">ID Number</label>
+                    <input type="number" class="form-control" id="exampleID">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleUserame" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="exampleUserame">
+                    </div>
+                    <div class="mb-3">
+                        <label for="examplePassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="examplePassword">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Category</option>
+                            <option value="1">Hot</option>
+                            <option value="2">Cold</option>
+                            <option value="3">Frappe</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+        </div>
     </div>
 
     
